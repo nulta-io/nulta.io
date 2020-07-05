@@ -1,0 +1,444 @@
+-------- <h1> Nulta-io </h1> ---------                                       | [man] command call |
+
+As you can see TLR design draws design, for its programmatic concept(NULTA) from Bash(bourne-again shell dessign pattern).
+To explore more of it transfer to next address: http://nulta.io             
+Comming soon:  ->  https:// will have to be implemented to use commands like [stream]                 
+
+printl:  [${v}] [-strings]    -writes to terminal line reader
+                               simplest possible output;
+echo:    [${v}] [-strings]    -writes to terminal line reader with evaluation complex output;
+$:       [${v}] [-FLUIDS | -*CRUDS] = [-this]    -assign fluids           OR cruds 
+      valid:  $ a = 10
+      valid:  $ b = 'string'
+      valid:  $ c = function(){alert(1)}
+      valid:  $ d = alert(1)
+      valid:  $ e = prompt('name','petar')
+      valid:  $ *f = 3.14
+      [fluid's] can change, [cruds] can not!
+      </br>
+
+      There is 5 built in fluids, which can be overwritten:
+      $1, $2, $3, $4 AND $i
+
+      AS ALWAYS, SPACES ARE IMPORTANT!
+   
+FI:      [${v}] [-statement]    -evaluate a state. Function infallibility
+  
+   valid:  FI [10 > 2] my long string           -returns a string, because its true
+   valid:  FI [10 > 2] clear                    -call command
+   valid:  FI [10 < 2] clear : lc               -drop first, call second command
+
+  form:  [command] [statement] [C1] : [C2]
+  [:]    -means ELSE
+  valid:  [statement] can be [ statement ] can't be [    statement ]
+  SPACES ARE IMPORTANT!
+cat:       [${v}] [--g] [-long strings]     -simple, yet powerful reader     accepts input to read OR  flag [-g]                           
+           flag -g uses fetch API and __grab() to return text file for read. 
+            valid: cat -g ../link-to-my-file/name.txt                
+look:   [${v}] [-word] [-in file]     -look for word in file, using cat program.
+            valid: look function ./term.js
+            Useful for searching through document
+PS1:    [${v}] [-prompt chars]     -customize prompt
+              Type: PS1 default  returns to default   
+script: [${v}] [-javascript code]   -run javascript
+man:    [${v}] [-command]     -manual 
+        How to use:
+       [-] needed parameter : [--] optional
+       [..] two dots in brackets indicates many inputs
+       [|] line in brackets indicates OR
+       {}  some commands use special characters in order to work
+       EXAMPLE:
+       man clear     -gets you manual about clear function
+       some commands can pass optional parameters like:
+       clear -c
+
+       SPACES ARE IMPORTANT
+preview:  [${v}] [--l] [-link]     -preview online image OR image on you computer OR text from file
+      Accepts: http, https, ./, ../
+      optional: use original image size with [-l] flag
+   
+video: [${v}] [-link]     -play video from your app
+                    Outside videos cannot be played
+                    Accepts: ../path-to-video
+clear:  [${v}] [--c]     -clear screen, optional and {console}
+   
+...:    [${v}] [-number OR text]     -count numbers OR spread text
+calc:   [${v}] [-numA] [-operation] [-numB]   -arithmetics
+        operations: [ + , - , * , / , % , ** ]
+        add | subtract | multiply | divide | modulo remainder | power
+read:   [${v}] [-- -s][--question]     - requires response from active user 
+                     Accepted: YES | NO &nbsp;       - case insensitive
+                     question is optional                                  
+                     secret form is optional                               
+                     if [-s] defined SECRET input activated                
+pipeline: [${v}] [ -comm1 | -comm2 ]     -command chain-er 
+                  use | symbol to chain 2 commands                   
+                 Activate pipeline:  hit [|] on keyboard ENG format     
+help:
+      ~(tilde)       -indicates program told me something
+      > &nbsp; || no response   -indicates program did something
+      ~bad-request  -indicates    wrong command form
+      ~empty        -indicates empty fluid, can be assigned
+      ~valid        -indicates passed evaluation
+      ~to-crud      -indicates attempted value change of a crud
+
+      I read commands like this:
+      [command] [-parameter1] [-parameter2] [-parameter3]
+      EXAMPLE:  ls 1 2 3
+      hit [Enter] to confirm command
+      hit [ArrowUp] to repeat last command
+      hit [key:| 220 ] to pipeline 2 command
+      $          -indicates fluids. Changeable variables.
+      *          -indicates CRUDS.  Non-Changeable built-in.
+      SPACES are important!
+
+      ERROR's are marked color [red] 
+      EBAD    &nbsp;   ~bad-request  &nbsp; non-valid form
+      EMPT    &nbsp;   ~empty        &nbsp; not-assigned
+      ECRUD   &nbsp;   ~to-crud      &nbsp; tried-assign-to-crud
+
+      Returned EMPTY line indicates false result of command,
+      except for new CRUD and FLUID assign.
+
+      Program will try, to help you, understand what happened.
+
+      Once you start writing TLR lines think of it, just like
+      that. Command lines, one by one. One, can do anything on
+      single line.
+      One can include libraries, that can bread new life into your
+      programming. EXAMPLE: include canvas graphic to
+      represent data, with many different shapes.
+
+      use:  include gameon                                             #this includes library
+            script create_canvas(100,200, 'myCanvas', document.body)   #create canvas on document
+
+      By using tunel command, one, can simulate COMMAND CENTAR and
+      invoke any app.
+
+      TLR carries code name NULTA ø meaning ZERO/GROUND. Think of it just like that.
+
+      Available built-in's for tunel's:            SWITCH nd for (https://ninja-digital.com)
+                                                   call   ./program/      directly
+        ***************************************************************
+        ./program/ARTNULTA/         nd/COIN_TRACKER/    nd/genetics/
+        ./program/DIANA/            nd/FROGGY_LEAP/     nd/intelekt/
+        ./program/MAMOGRAF/         nd/RAD/             nd/tetris/
+        ./program/super_blob/       nd/x_o/             nd/DOROTEJA/
+        ./program/micro-player/     nd/favi/            nd/NINJA_ESCAPE/
+        ./program/C-VIRUS/          nd/DEMIR_KAPIJE/    nd/german/
+        ./program/BALKAN_KINGPIN/   nd/cube/
+        ./program/SRP/              nd/color_captcha/
+        ./program/CHESS/            nd/pong/
+
+        ***************************************************************
+! Not all programs are available, they will roll out gradually.
+
+        Mac Apps [Direct Download]:
+        ---------------------------
+        https://www.ninja-digital.com/download/V-boom.zip      #double, triple the youtube volume
+        https://www.ninja-digital.com/download/janarika.zip    #direct download youtube videos
+
+       Find out more with: [man] [command]
+about:
+    Programmed by Petar Sladojevic in year 2020
+    Built on-top of Javascript, inspired by [Bash] programming language.
+    Designed for simplicity, born in minimalism.
+
+    Software can be used here on address:   [ www.nulta.io ]
+    If you want to use it for commercial purposes contact owner for
+    condition details.            marketingexecutive2018@gmail.com
+
+
+    Concept of NULTA
+    -------------------
+
+
+    Nulta is concept, programmatic paradigm, and ongoing project.
+    New Commands, will be added to original source code.
+    Nulta represents foundation, on which level 1 software can grow.
+    Ground is Nulta. Nulta is the ground.
+
+
+     level 2   products of [level 1]     images, code, art etc
+     level 1   ART NULTA    Diana    CHESS2020  ...
+     level 0          Terminal Line Reader (TLR)
+     ___________________________________________________
+     -1        foreign servers always connected
+
+
+    TLR is a programmatic interpreter.
+    level 1 contains built-in projects that sit on the NULTA[ground],
+    ready to flower. Once used, they breed secondary products.
+    EXAMPLE: pattern images made with ART NULTA.
+
+    With TLR you investigate, control, monitor,
+    and write small programs write there, on the spot.
+    It is programmatic in that sense that his built-ins are easy,
+    fast, powerful and ready for usage in just couple of parameters.
+    You can write commands and invoke programs with TLR.
+
+    TLR lives on ONE line. You can do anything, on one line.
+
+    TLR is made out of COMMANDS. Pre-made combos of many
+    functions and variables.
+    You use TLR, like this.
+
+           sum 100 201 300
+            ^   ^   ^   ^
+      COMMAND   P1  P2  P3
+
+      P1,P2,P3 = parameters
+
+    TLR includes two main VARIABLE FORMS, beside COMMANDS,
+    and they are called fluid and Crud.
+    FLUIDS can change, they are marked with [$] sign.
+    CRUDS  cannot change, ever, they are marked with [*]
+
+    Define new fluids and crud's like this:
+    $ a = 10      #fluid
+
+    $ *pi = 3.14  #crud
+
+    With TLR you call javascript anytime, you need it.
+    TLR can evaluate things using javascript, this alone opens a world of options.
+ls:  [${v}] [--before] [-list element]     -list by line  
+                       valid: ls string               list every char 
+                       valid: ls -@@@@  string        insert before every char;
+lc:
+      [${v}]            -list commands    
+                                        this command is using list built-in 
+cw:   [${v}] [--c]      -count words  
+                       optional: count CHARACTERS (includes whitespace) [-c]
+pwd:  [${v}]           -print working directory
+                                     on web it will print url
+device:  [${v}]        -print device  
+                                                                     
+history: [${v}]        -list history                                     this command is using list builtin
+   
+typeis:  [${v}]  [-this]    -print what type is this   
+                       valid: typeis *true                                         
+                       valid: typeis alert                                         
+                       valid: typeis string                                        
+    
+sleep:   [${v}]  [-time] [---then]       -delay TLR for [-time] seconds 
+                       valid: sleep 10                                        
+                       valid: sleep 10 Gotovo!                                
+                       callback is optional                                   
+hardsleep: [${v}]  [-time] [---then]    -halt TLR for [-time] seconds 
+                       valid: hardsleep 10                                    
+                       valid: hardsleep 5 string                               
+                       callback is optional                                   
+wait:      [${v}]  [-time] [--writeToConsole]  -freeze TLR for [-time] seconds 
+                       valid: wait 3 jedan                                                
+                       valid: wait 5 jed_dva_tri_cetri_pet                               
+                       chain second string as one,                                        
+                       because wait transfers $2 to console    
+hashme:    [${v}]  [-string | -integer]  -produce total 448 long randomness from input
+                       valid: hashme 100                                       
+                       valid: hashme abc                                        
+                       can be characters or integers </br>`;
+   
+*RANDOM:   [${v}]  [--limit]    &emsp; &emsp;    -generate's randomness 
+                       valid: *RANDOM       -from 0 to 1           
+                       valid: *RANDOM 100   -from 0 to 100         
+                       limit is optional                                           
+                       built-in CRUD                                                
+binary:    [${v}]  [-integer | string ]     -any to binary
+                       valid: binary 3                                        
+                       valid: binary a                                        
+                       can be character or integer
+sort:     [${v}]  [-even | -odd ] [-length]   -sort numbers even or odd
+                       valid: sort -e 1000                                        
+                       valid: sort odd 30                                         
+                       shortcut available as -e AND -o                            
+pitagora: [${v}]  [-a] [-b]   -calculate with pitagoras
+                       formula:     c = √(a*a + b*b)                          
+modulo:   [${v}]  [-n] [-m]   -calculate modulo
+
+mcost:    [${v}]  [-n] [-m]   -calculates mutually connected value of cost 
+                        how much would number 10 cost to become 9. Perfect for machine learning model.
+                        Pyramid example:      <pre>
+         10
+       9    11
+     8        12
+   7            13
+...                ...</pre> 
+    
+sum:    [${v}]  [-n1] [-n2] [..]    -sum all of given integers.
+                        no limit in number of parameters`;
+   
+deviation:  [${v}]  [-n1] [-n2] [..]  -calculate deviation from mid results.
+                        no limit in number of parameters 
+   
+fibo:   [${v}]  [-length]   -show fibonacci numbers 
+  
+montecarlo:  [${v}]      -prints randomness probability using monte carlo algorithm
+    
+amii:   [${v}]           -always shows are you using original source or iframe source
+    
+frame:  [${v}]          -create second screen TLR. independent
+    
+killframe:  [${v}]      -kill the second frame TLR.
+test:   [${v}]  [-n] [-m] [r1] [r2]   -test n VS m. return r1 OR r2 
+                       valid: 100 100 yes no  
+                       valid: aca aca  1 0     
+                       valid: 30 20 true false 
+pad:     [${v}] [--content]     -text editor
+   
+      Handy text editor for quick notepad inputs.
+      Keyboard controls:
+      ---------------------------------------------------------------------
+      [⌘U] character counter [ESC] exit program
+      [⌘O] save text         [⌘P]  save PDF
+      ---------------------------------------------------------------------
+
+      optional: use [-content] parameter to carry everything
+                written to TLR pad with you.
+
+      EXTRA tip: turn on character counter and get
+                 length of file.
+
+      SUPER feature: Export as text file.
+
+fontswap:   [${v}] [--font name]    -swap for monospace, swap for default.
+                                                optional:     pick font. 
+    
+fontsize:   [${v}] [+ | -]   -resize text
+   
+backswap:   [${v}] [--color name]    -swap backgrounds. BLACK OR WHITE 
+            optional:       pick color of your choice        
+            valid: backswap mediumpurple 
+  
+notif:   [${v}] [-title] [-content] [-if-clicked]  -invoke native notification, if they exist.
+            valid: notif head body lc 
+            valid: notif a b  alert  
+    
+lapse:   [${v}] [-command .. .. ..]    -measure performance of command.
+            valid: lapse fibo 100 
+longestin:  [${v}] [--n][-strings .. .. ..]   -find out longest word among many.
+     valid: longestin Mirjana Aleksandra Sara Irena   -returns name
+     valid: longestin -n Mirjana Aleksandra Sara Irena -returns length as number
+     optional:  you can use parameter [-n] to get length 
+    
+countin:   [${v}] [-target] {.. .. ..}   -count element in array
+           valid: countin 13 {100 200 14 0 13 101 13}                 
+           valid: countin AA in {aa AA bb CD wwc}                           
+reverse:   [${v}] [-.. .. ..]   -reverse elements. What ever you write.
+                       valid: reverse 13 100 200 14 0 13 101 13                           
+                       valid: reverse ana voli milovana                                
+everyn:     [${v}] [-n] [-m]   -return EVERY [n] in [m] </br>
+                  valid: everyn 5 100                                         
+                  valid: everyn 3 30                                         
+UNTIL:       [${v}] [-n] {-act}   -return [n] times of [act]
+    
+             valid: UNTIL 5 {echo |*--  --@@@--  --*| }
+    This command reveals special FLUID with name:   $i
+    $i holds incrementing value of loops so to reference it use form:
+
+    valid:  UNTIL 10 {script alert(COMMANDS['$i'])}
+    valid:  UNTIL 10 {log(COMMANDS['$i'])}
+       </pre>`;
+   
+log:    [${v}] [-strings]   -Write to developer console.
+logtable:   [${v}] [--a] [-strings]    -Write to developer console in tables. 
+          optional:  use [-a] to represent data in a row     
+                        default is stacked in columns                      
+   
+toprinter:  [${v}] [--document name]   -print for real 
+                        valid: toprinter                                         
+                        valid: toprinter important document                     
+tunel:  [${v}] [-width] [-height] [--url]  -create outside window.   
+             valid: tunel 100 200                                                   
+             valid: tunel 430 355 https://ninja-digital.com                         
+googleit:     [${v}] [-width] [-height] [--url]   -google directly.   
+             valid: tunel 100 200                                                   
+             valid: tunel 430 355 dogs and cats                       
+include:   [${v}] [-lib name]  &emsp; &emsp;   -include libraries. 
+            Available: gameon [canvas, shapes, games]              
+            cloak  [css animations style]                                                                  classes [vec, enemy, arena, particle...] 
+   
+lib:    [${v}] [-lib name]    -show active libraries
+    
+geo:    [${v}]   -get your current geolocation 
+rgb:    [${v}]  [-color1] [-color2] [-color3]  -rgb to hex 
+        valid: rgb 100 200 100        ~green color (#64c864)  
+            TLR will show the color
+    
+stream:  [${v}]  -start video stream 
+killstream:  [${v}]   -kill video streaming
+                       Requires stream.
+photo:   [${v}]     -take portrait photo from stream, auto download.
+                    Requires stream.
+  
+say:     [${v}]    -speak this words.
+             Valid:    say 100
+             Valid:    say THIS IS NULTA
+    
+replace: [${v}] [-this] [-that]   -replace [this] with [that] in sentance. 
+    Valid:    replace _ @   swap _ word
+    Valid:    replace _ @  "zameni _ u ovoj recenici"
+    Valid:    replace _ @  'zameni _ u ovoj recenici'
+   
+   
+date:    [${v}]     -returns date.
+tolocal: [${v}] [-anything]  -set to local storage, any data.
+
+      valid:   tolocal ABC
+      access:  *LOCAL
+
+      this is the only way to set [*LOCAL] crud,
+      it's directly connected to local storage.
+
+      TLR will keep in memory, anything you write.
+
+      BONUS:
+      You can combo [tolocal] after you upload [file] as text.
+      A| read [file]
+      B| copy text
+      C| save [tolocal]
+
+file:  [${v}] [--s]     -read file as text. 
+  
+      Accepts:   only text/plain
+      Once called, it will allow user to upload client text file.
+      You can get details about selected file with parameter [-s]
+      Valid: file -s
+    
+mailto: [${v}] [--address] [--subject] [--message]   -write entire mail in TLR. Send through native client.
+    
+      Valid:   mailto marketingexecutive2018@gmail.com FREE!!! We, got huge discount
+                                                               for you today.
+                                                               Get one free app with...
+   
+qmusic:   [${v}] [-url-to-song]    -quick easy music player.
+                        Valid:  qmusic mysong.mp3 
+   
+valid:    [${v}] [-url-to-song]    -is this valid url ? 
+                  Valid:  valid htt                      
+                  Valid:  valid https://ninja-digital.com 
+    
+units:    [${v}] [-number] [-desired]  -How much is 131 bytes into mb.
+   <pre>
+      Valid:  units  131 kb
+      Any number value into desired units.
+      Starts from <u>bytes</u> OR <u>Kilograms</u> OR <u>Meters</u> OR <u>Litres</u>
+
+       -> Data                      -> Weight   <span class="green">
+       ________________________     _______________________________
+       kb | mb | gb | tb | pb |      po | lbs | oun | gr | mlg | mi
+       ------------------------     -------------------------------   </span>
+       -> Length <span class="green">
+       _______________________________________________________
+       inch | mile | cm | dm | feet | km | mm | nm |  ya | ly
+       -------------------------------------------------------        </span>
+       -> Liquids <span class="green">
+       ________________________________________________________________
+       spoon | teaspoon | pint | gal | drops | dl | cl | cup | nm | cm3
+       ---------------------------------------------------------------- </span>
+        -> Temperature       -> Area        -> Serbians Old    -> Angle   <span class="green">
+       ______________       _________      _______________    _______
+        fa | ke              he | ar        la | ju            de
+       --------------       ---------      ---------------    -------   
+
+
+    </pre>`;
