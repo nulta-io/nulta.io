@@ -418,7 +418,7 @@ valid:    [${v}] [-url-to-song]    -is this valid url ?
                   Valid:  valid https://ninja-digital.com 
     
 units:    [${v}] [-number] [-desired]  -How much is 131 bytes into mb.
-   <pre>
+
       Valid:  units  131 kb
       Any number value into desired units.
       Starts from <u>bytes</u> OR <u>Kilograms</u> OR <u>Meters</u> OR <u>Litres</u>
@@ -439,6 +439,3 @@ units:    [${v}] [-number] [-desired]  -How much is 131 bytes into mb.
        ______________       _________      _______________    _______
         fa | ke              he | ar        la | ju            de
        --------------       ---------      ---------------    -------   
-
-
-    </pre>`;
